@@ -27,3 +27,27 @@ variable "log_retention_in_days" {
   type        = number
   default     = 365
 }
+
+variable "vpc_cidr" {
+  description = "CIDR block for the stack VPC."
+  type        = string
+  default     = "10.20.0.0/16"
+}
+
+variable "instance_name" {
+  description = "Name of the EC2 instance."
+  type        = string
+  default     = "runbook-demo-ec2"
+}
+
+variable "instance_type" {
+  description = "EC2 instance type."
+  type        = string
+  default     = "t3.micro"
+}
+
+variable "root_volume_size" {
+  description = "Root volume size in GiB."
+  type        = number
+  default     = 8
+}
