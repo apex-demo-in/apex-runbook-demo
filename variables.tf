@@ -27,3 +27,9 @@ variable "log_retention_in_days" {
   type        = number
   default     = 365
 }
+
+variable "public_bucket_prefix" {
+  description = "Name prefix for the public download bucket (the account ID is appended)."
+  type        = string
+  default     = "runbook-demo-public-downloads"
+}
